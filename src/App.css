@@ -15,7 +15,9 @@ form input {
   font-family: Lora;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0.75rem 0;
 }
 
@@ -40,28 +42,28 @@ li {
 }
 
 .title {
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: bolder;
 }
 
 .primary {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-.secondary {
   font-size: 1.75rem;
   font-weight: bold;
 }
 
+.secondary {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 .teritary {
-  font-size: 1.35rem;
+  font-size: 1rem;
 }
 
 .btn {
   font-family: Lora;
   display: inline-block;
-  padding: 1rem;
+  padding: 0.75rem;
   text-align: center;
   border-radius: 5px;
   font-size: 1.25rem;
@@ -111,6 +113,7 @@ li {
 }
 
 .main-navbar {
+  height: 15vh;
   width: 100%;
   padding: 1rem 2rem;
   color: #333;
@@ -153,6 +156,8 @@ li {
 
 #login {
   width: 100%;
+  height: 85vh;
+  overflow: hidden;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 0.9fr 1fr;
@@ -164,6 +169,7 @@ li {
 }
 
 #login .showcase-section {
+  overflow: hidden;
   background: #ffe;
   width: 100%;
   height: 100%;
@@ -172,14 +178,15 @@ li {
 
 #login .showcase-section img {
   display: block;
-  height: 80%;
-  width: 80%;
+  height: 40%;
+  width: 60%;
   margin: 5rem auto 0 auto;
 }
 
 #login .form-section {
   background: url("https://i.pinimg.com/originals/85/ec/df/85ecdf1c3611ecc9b7fa85282d9526e0.jpg") no-repeat center center;
   background-size: 100% 100%;
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,32 +204,34 @@ li {
 
 #login .form-section .cont {
   position: relative;
-  width: 85%;
-  min-height: 90%;
+  width: 65%;
+  height: 85%;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#f4f4f4), to(#f3f3f3));
   background: linear-gradient(#fff, #f4f4f4, #f3f3f3);
-  padding: 2rem;
+  padding: 1rem 2rem;
   border-radius: 5px;
   text-align: center;
   overflow: hidden;
 }
 
 #login .form-section .cont #login-form {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-#login .form-section .cont #login-form input[type='text'], #login .form-section .cont #login-form input[type='password'] {
+#login .form-section .cont #login-form input[type="text"],
+#login .form-section .cont #login-form input[type="password"] {
   display: block;
   width: 100%;
   border: none;
   background: inherit;
   border-bottom: 1px solid #555;
   padding: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 2.5rem;
 }
 
-#login .form-section .cont #login-form input[type='text']:focus, #login .form-section .cont #login-form input[type='password']:focus {
+#login .form-section .cont #login-form input[type="text"]:focus,
+#login .form-section .cont #login-form input[type="password"]:focus {
   outline: none;
 }
 
@@ -273,6 +282,8 @@ li {
 #signup {
   display: -ms-grid;
   display: grid;
+  height: 85vh;
+  overflow: hidden;
   -ms-grid-columns: 0.9fr 1fr;
       grid-template-columns: 0.9fr 1fr;
 }
@@ -295,54 +306,50 @@ li {
 
 #signup .showcase-section img {
   display: block;
-  width: 80%;
-  height: 80%;
+  width: 50%;
+  height: 50%;
   margin: 0 auto;
 }
 
 #signup .form-section {
+  overflow: auto;
   background: url("https://i.pinimg.com/originals/85/ec/df/85ecdf1c3611ecc9b7fa85282d9526e0.jpg") no-repeat center center;
   background-size: 100% 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 1rem;
 }
 
 #signup .form-section .cont {
-  margin: 2rem 0;
-  width: 90%;
-  background: #fff;
+  margin: 2rem auto;
+  width: 65%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), color-stop(#f4f4f4), to(#f3f3f3));
+  background: linear-gradient(#fff, #f4f4f4, #f3f3f3);
   border-radius: 5px;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
 #signup .form-section .cont #signup-form {
-  padding: 2rem;
+  padding: 1rem 1.5rem;
 }
 
-#signup .form-section .cont #signup-form input[type='text'], #signup .form-section .cont #signup-form input[type='password'], #signup .form-section .cont #signup-form input[type='email'], #signup .form-section .cont #signup-form input[type='tel'] {
+#signup .form-section .cont #signup-form input[type="text"],
+#signup .form-section .cont #signup-form input[type="password"],
+#signup .form-section .cont #signup-form input[type="email"],
+#signup .form-section .cont #signup-form input[type="tel"] {
   display: block;
   width: 100%;
   border: none;
   background: inherit;
   border-bottom: 1px solid #555;
   padding: 0.5rem;
-  font-size: 1.25rem;
+  font-size: 1rem;
   margin-bottom: 2.5rem;
 }
 
-#signup .form-section .cont #signup-form input[type='text']:focus, #signup .form-section .cont #signup-form input[type='password']:focus, #signup .form-section .cont #signup-form input[type='email']:focus, #signup .form-section .cont #signup-form input[type='tel']:focus {
+#signup .form-section .cont #signup-form input[type="text"]:focus,
+#signup .form-section .cont #signup-form input[type="password"]:focus,
+#signup .form-section .cont #signup-form input[type="email"]:focus,
+#signup .form-section .cont #signup-form input[type="tel"]:focus {
   outline: none;
 }
 
@@ -459,7 +466,7 @@ li {
   position: relative;
 }
 
-#home .search .form-section form input[type='text'] {
+#home .search .form-section form input[type="text"] {
   width: 100%;
   border: 2px solid #333;
   padding: 1rem 4rem;
@@ -467,7 +474,7 @@ li {
   border-radius: 25px;
 }
 
-#home .search .form-section form input[type='text']:focus {
+#home .search .form-section form input[type="text"]:focus {
   outline: none;
 }
 
@@ -522,13 +529,14 @@ li {
   position: relative;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
   background: url("https://wallpapercave.com/wp/wp6988787.png") no-repeat center center;
   background-size: 100% 100%;
 }
 
 .dms .header {
   width: 100%;
-  height: 15%;
+  height: 12.5%;
   padding: 1rem 2rem;
   background: #fff;
   color: #333;
@@ -545,7 +553,8 @@ li {
           align-items: center;
 }
 
-.dms .header div, .dms .header Link {
+.dms .header div,
+.dms .header Link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -568,28 +577,12 @@ li {
   margin: 0;
 }
 
-.dms .nav {
-  position: fixed;
-  bottom: 8rem;
-  right: 0;
-  z-index: 2;
-}
-
-.dms .nav button {
-  display: block;
-  padding: 0.5rem 0;
-  margin: 0 0.5rem;
-  border-radius: 50%;
-  color: #fff;
-  cursor: pointer;
-}
-
 .dms .messages-section {
   width: 100%;
-  height: 73%;
-  overflow: hidden;
-  position: relative;
-  padding: 1rem 3.5rem 1rem 1rem;
+  height: 75%;
+  overflow: scroll;
+  overflow-x: hidden;
+  padding: 1rem;
 }
 
 .dms .messages-section div {
@@ -597,6 +590,7 @@ li {
 }
 
 .dms .messages-section div h1 {
+  max-width: 100%;
   padding: 0.6rem;
   border-radius: 10px;
   margin: 1rem 0;
@@ -643,45 +637,45 @@ li {
 .dms .form-section {
   padding: 0 0.75rem;
   width: 100%;
-  height: 10%;
-  position: absolute;
-  bottom: 1rem;
-  left: 0;
+  height: 12.5%;
 }
 
 .dms .form-section div {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.dms .form-section input[type='text'] {
-  display: block;
-  padding: 1.5rem 2rem;
+.dms .form-section textarea {
+  display: inline-block;
+  padding: 1.25rem 2rem;
   font-size: 1rem;
-  width: 100%;
+  width: 95%;
+  height: 4rem;
   border-radius: 30px;
   border: none;
   background: #fff;
   color: #333;
 }
 
-.dms .form-section input[type='text']:focus {
+.dms .form-section textarea:focus {
   outline: none;
 }
 
 .dms .form-section button {
-  position: absolute;
-  right: 2rem;
-  width: 3%;
+  display: inline-block;
+  padding: 0.75rem;
   border: none;
   background: #fff;
+  border-radius: 50%;
   color: #333;
   cursor: pointer;
 }
@@ -815,7 +809,7 @@ li {
   padding: 1rem;
 }
 
-#forgot-password .main-section .form-section #forgotpwd-form .input-fields input[type='text'] {
+#forgot-password .main-section .form-section #forgotpwd-form .input-fields input[type="text"] {
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
@@ -824,7 +818,7 @@ li {
   border-bottom: 1px solid #333;
 }
 
-#forgot-password .main-section .form-section #forgotpwd-form .input-fields input[type='text']:focus {
+#forgot-password .main-section .form-section #forgotpwd-form .input-fields input[type="text"]:focus {
   outline: none;
 }
 
@@ -915,7 +909,7 @@ li {
   padding: 1rem;
 }
 
-#otp-verification .main-section .form-section #verification-form .input-fields input[type='number'] {
+#otp-verification .main-section .form-section #verification-form .input-fields input[type="number"] {
   width: 100%;
   padding: 0.75rem;
   font-size: 1rem;
@@ -924,7 +918,7 @@ li {
   border-bottom: 1px solid #333;
 }
 
-#otp-verification .main-section .form-section #verification-form .input-fields input[type='number']:focus {
+#otp-verification .main-section .form-section #verification-form .input-fields input[type="number"]:focus {
   outline: none;
 }
 
@@ -1192,7 +1186,8 @@ li {
   #login .form-section .cont #login-form {
     padding: 0.7rem;
   }
-  #login .form-section .cont #login-form input[type='text'], #login .form-section .cont #login-form input[type='password'] {
+  #login .form-section .cont #login-form input[type="text"],
+  #login .form-section .cont #login-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #login .form-section .cont #login-form button {
@@ -1229,7 +1224,8 @@ li {
   #signup .form-section .cont #signup-form {
     padding: 1rem;
   }
-  #signup .form-section .cont #signup-form input[type='text'], #signup .form-section .cont #signup-form input[type='password'] {
+  #signup .form-section .cont #signup-form input[type="text"],
+  #signup .form-section .cont #signup-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #signup .form-section .cont #signup-form button {
@@ -1319,30 +1315,24 @@ li {
     height: 70px;
     width: 70px;
   }
-  .dms .header {
-    height: 12%;
-  }
   .dms .header img {
     width: 60px;
     height: 60px;
   }
   .dms .nav {
-    bottom: 12%;
-  }
-  .dms .nav button {
-    display: inline-block;
+    display: none;
   }
   .dms .messages-section {
-    height: 71%;
+    overflow-y: scroll;
     padding: 1.5rem;
   }
   .dms .form-section {
     padding: 0.75rem;
-    bottom: 2%;
-    height: 10%;
   }
-  .dms .form-section input[type='text'] {
-    padding: 1rem 2rem;
+  .dms .form-section textarea {
+    padding: 0.75rem 2rem;
+    height: 3rem;
+    font-size: 0.9rem;
   }
   .dms .form-section button {
     right: 3rem;
@@ -1499,6 +1489,7 @@ li {
     padding: 1rem;
   }
   #login {
+    overflow: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -1516,7 +1507,8 @@ li {
     width: 100%;
     padding: 1rem;
   }
-  #login .form-section .cont #login-form input[type='text'], #login .form-section .cont #login-form input[type='password'] {
+  #login .form-section .cont #login-form input[type="text"],
+  #login .form-section .cont #login-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #login .form-section .cont #login-form button {
@@ -1530,6 +1522,7 @@ li {
             flex-direction: column;
   }
   #signup {
+    overflow: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -1541,6 +1534,7 @@ li {
     width: 100%;
   }
   #signup .form-section {
+    overflow: auto;
     padding: 1rem;
   }
   #signup .form-section .cont {
@@ -1551,7 +1545,8 @@ li {
   #signup .form-section .cont #signup-form {
     padding: 1rem;
   }
-  #signup .form-section .cont #signup-form input[type='text'], #signup .form-section .cont #signup-form input[type='password'] {
+  #signup .form-section .cont #signup-form input[type="text"],
+  #signup .form-section .cont #signup-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #signup .form-section .cont #signup-form button {
@@ -1626,30 +1621,24 @@ li {
     border-radius: 10px;
     color: #fff;
   }
-  .dms .header {
-    height: 12%;
-  }
   .dms .header img {
     width: 60px;
     height: 60px;
   }
   .dms .nav {
-    bottom: 12%;
-  }
-  .dms .nav button {
-    display: inline-block;
+    display: none;
   }
   .dms .messages-section {
-    height: 71%;
+    overflow-y: scroll;
     padding: 1.5rem;
   }
   .dms .form-section {
     padding: 0.75rem;
-    bottom: 2%;
-    height: 10%;
   }
-  .dms .form-section input[type='text'] {
-    padding: 1rem 2rem;
+  .dms .form-section textarea {
+    height: 4.5rem;
+    padding: 1.4rem 2rem;
+    font-size: 1.25rem;
   }
   .dms .form-section button {
     right: 3rem;
@@ -1747,18 +1736,18 @@ li {
   }
 }
 
-@media (min-width: 400px) and (min-height: 200px) and (max-height: 400px) {
+@media (min-width: 400px) and (min-height: 200px) and (max-height: 550px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
   .primary {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
   .secondary {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .teritary {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .main-navbar {
     width: 100%;
@@ -1807,6 +1796,7 @@ li {
     padding: 1rem;
   }
   #login {
+    overflow: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -1826,7 +1816,8 @@ li {
     width: 100%;
     padding: 1rem;
   }
-  #login .form-section .cont #login-form input[type='text'], #login .form-section .cont #login-form input[type='password'] {
+  #login .form-section .cont #login-form input[type="text"],
+  #login .form-section .cont #login-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #login .form-section .cont #login-form button {
@@ -1840,6 +1831,7 @@ li {
             flex-direction: column;
   }
   #signup {
+    overflow: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
@@ -1852,6 +1844,7 @@ li {
     width: 100%;
   }
   #signup .form-section {
+    overflow: auto;
     padding: 1rem;
   }
   #signup .form-section .cont {
@@ -1862,7 +1855,8 @@ li {
   #signup .form-section .cont #signup-form {
     padding: 1rem;
   }
-  #signup .form-section .cont #signup-form input[type='text'], #signup .form-section .cont #signup-form input[type='password'] {
+  #signup .form-section .cont #signup-form input[type="text"],
+  #signup .form-section .cont #signup-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #signup .form-section .cont #signup-form button {
@@ -1938,29 +1932,28 @@ li {
     color: #fff;
   }
   .dms .header {
-    height: 18%;
+    height: 17%;
   }
   .dms .header img {
     width: 60px;
     height: 60px;
   }
   .dms .nav {
-    bottom: 14%;
-  }
-  .dms .nav button {
-    display: inline-block;
+    display: none;
   }
   .dms .messages-section {
-    height: 60%;
+    height: 66%;
+    overflow-y: scroll;
     padding: 1.5rem;
   }
   .dms .form-section {
+    height: 18%;
     padding: 0.75rem;
-    bottom: 8%;
-    height: 10%;
   }
-  .dms .form-section input[type='text'] {
+  .dms .form-section textarea {
     padding: 1rem 2rem;
+    height: 3rem;
+    font-size: 1rem;
   }
   .dms .form-section button {
     right: 3rem;
@@ -2062,16 +2055,16 @@ li {
 
 @media (min-width: 720px) and (max-width: 860px) {
   .title {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
   }
   .primary {
-    font-size: 1.75rem;
+    font-size: 2.5rem;
   }
   .secondary {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .teritary {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   .main-navbar {
     width: 100%;
@@ -2120,6 +2113,7 @@ li {
     padding: 1rem;
   }
   #login {
+    overflow: auto;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -2137,7 +2131,8 @@ li {
     width: 100%;
     padding: 1rem;
   }
-  #login .form-section .cont #login-form input[type='text'], #login .form-section .cont #login-form input[type='password'] {
+  #login .form-section .cont #login-form input[type="text"],
+  #login .form-section .cont #login-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #login .form-section .cont #login-form button {
@@ -2151,6 +2146,7 @@ li {
             flex-direction: column;
   }
   #signup {
+    overflow: auto;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
   }
@@ -2162,6 +2158,7 @@ li {
     width: 100%;
   }
   #signup .form-section {
+    overflow: auto;
     padding: 1rem;
   }
   #signup .form-section .cont {
@@ -2172,7 +2169,8 @@ li {
   #signup .form-section .cont #signup-form {
     padding: 1rem;
   }
-  #signup .form-section .cont #signup-form input[type='text'], #signup .form-section .cont #signup-form input[type='password'] {
+  #signup .form-section .cont #signup-form input[type="text"],
+  #signup .form-section .cont #signup-form input[type="password"] {
     margin-bottom: 2rem;
   }
   #signup .form-section .cont #signup-form button {
@@ -2250,30 +2248,24 @@ li {
   .dms {
     height: 100vh;
   }
-  .dms .header {
-    height: 12%;
-  }
   .dms .header img {
     width: 60px;
     height: 60px;
   }
   .dms .nav {
-    bottom: 12%;
-  }
-  .dms .nav button {
-    display: inline-block;
+    display: none;
   }
   .dms .messages-section {
-    height: 70%;
+    overflow-y: scroll;
     padding: 1.5rem;
   }
   .dms .form-section {
     padding: 0.75rem;
-    bottom: 9.5%;
-    height: 5%;
   }
-  .dms .form-section input[type='text'] {
-    padding: 1rem 2rem;
+  .dms .form-section textarea {
+    padding: 1.25rem 2rem;
+    height: 4.75rem;
+    font-size: 1.2rem;
   }
   .dms .form-section button {
     right: 3rem;
